@@ -21,3 +21,6 @@ for project in "${_work_dir}"/packages/apps/**; do
     ./gradlew generateBp
     popd
 done
+
+# Remove .git folder
+rm -rf "${_work_dir}"/{external,packages/apps}/{Android.mk,.git}
