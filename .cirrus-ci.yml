@@ -1,9 +1,5 @@
 task:
   name: "Generate AOSP to main branch"
-  only_if: $CIRRUS_BRANCH == 'gamestar-ci'
-  on:
-    branch:
-      only: gamestar-ci
   script: |
     git clone https://github.com/aldrin1127/gamestar.git
     cd gamestar/aosptree
