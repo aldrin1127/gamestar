@@ -2,7 +2,7 @@ task:
   name: "Generate AOSP to main branch"
   timeout_in: 120m
   container:
-    image: openjdk: 24-slim
+    image: openjdk:24-slim
     privileged: true
     cpu: 8
     memory: 32G
