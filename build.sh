@@ -1,7 +1,7 @@
 #!/bin/bash
-cd aosptree
+pushd aosptree
 ./gamestar-patches/apply.sh
 if [ "$2" == "gsroot" ]; then
-    ./gamestar-patches/apply-rooted.sh
+    ./gamestar-patches/apply-gsroot.sh
 fi
-
+popd

@@ -1,0 +1,22 @@
+From 9f19909a7338bfff3092f822f653dafb1f3f5195 Mon Sep 17 00:00:00 2001
+From: Aldrin Morris D. Balitbit <aldrinbalitbit1127@outlook.com>
+Date: Sun, 6 Oct 2024 10:26:02 +0800
+Subject: [PATCH] Add .generatebp.gradle.kts for AOSP build
+
+---
+ app/build.gradle | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/app/build.gradle b/app/build.gradle
+index 5685923d8..978a53366 100644
+--- a/app/build.gradle
++++ b/app/build.gradle
+@@ -344,3 +344,5 @@ if (propFile.canRead()) {
+ repositories {
+     mavenCentral()
+ }
++
++apply from: 'generatebp.gradle.kts'
+-- 
+2.46.2
+

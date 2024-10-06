@@ -1,0 +1,7 @@
+task:
+  name: "Generate AOSP to main branch"
+  on:
+    branch:
+      only: /
+  script: |
+    cd 
