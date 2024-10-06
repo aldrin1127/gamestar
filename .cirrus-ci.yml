@@ -1,6 +1,6 @@
 task:
   name: "Generate AOSP to main branch"
-  only_if: $CIRRUS_BRANCH == 'main'
+  only_if: $CIRRUS_BRANCH == 'gamestar-ci'
   on:
     branch:
       only: gamestar-ci
